@@ -1,0 +1,12 @@
+.formie {
+    background-color: black;
+    color: rgb(133, 235, 160);
+    position: absolute;
+    left: 28rem;
+    top: 7rem;
+    padding: 20px 30px 20px 20px;
+    box-sizing: inherit;
+  }
+  .like{
+    color:rgb(254, 13, 13);
+  }

@@ -1,0 +1,57 @@
+#root{
+  background-color: aqua;
+}
+.div1{
+  background-color: rgb(1, 60, 14);
+  color: rgb(98, 164, 98);
+  position: absolute;
+  left: 7rem;
+  padding: 30px 30px 30px 30px;
+}
+.formie {
+  background-color: black;
+  color: rgb(133, 235, 160);
+  position: absolute;
+  left: 28rem;
+  top: 7rem;
+  padding: 20px 30px 20px 20px;
+  box-sizing: inherit;
+  border-radius: 2.5rem;
+}
+.typed {
+color: rgb(119, 221, 134);
+position : absolute;
+left: 6rem;
+top: 6rem;
+}
+.inp{
+position : relative;
+left : 1.05rem;
+}
+.a{
+position : relative;
+left : 1.07;
+}
+.b{
+position : relative;
+top :0.4rem;
+right : 0.25rem;
+}
+.age{
+position: relative;
+right: 0.3rem;
+}
+.what{
+color: red;
+}
+.heading{
+font-size: 4;
+position: relative;
+bottom : 14rem;
+color: rgb(180, 255, 100);
+left : 4rem;
+}
+.sec1{
+position: relative;
+right: 7rem;
+}
