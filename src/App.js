@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 
-
+const number = Math.floor(Math.random()*(10000000000-100000000 + 1) + 10000000);
 const currentYear = 2024;
+
 function App() {
   const [input, setinput] = useState({})
   
@@ -13,10 +14,11 @@ function App() {
   const [selectOption,setSelectOption]= useState('');
   const [UserID,GenerateUserID] = useState(0);
   
-
+  
   
   
   const handleSubmit = (ev)=>{
+    GenerateUserID(number);
     ev.preventDefault();
    const isEmptyField=Object.values(input).some(value=>value==='');
    if(isEmptyField){
@@ -28,16 +30,16 @@ function App() {
        alert('phone number is invalid');
        return;
     }
-    const number = Math.floor(Math.random()*(10000000000-100000000 + 1) + 10000000)
+    
    
    
-    GenerateUserID(number);
+    
 
 console.log(UserID);
 setinput({...input, 'UserID': UserID});
 console.log(input);
 const formData={
-  ...input,[UserID]:UserID
+  ...input
 };
 fetch('/api/submit',{
   method:"POST",
@@ -135,6 +137,10 @@ fetch('/api/submit',{
 
             <p>You have chosen <nav className = "what"> {userType}</nav></p>
         <br></br>
+        <label>Country </label>
+        <input type = "text" name = "country" value = {input.country||""} onChange={handleChange}/><br></br><br></br>
+        <label>City </label>
+        <input type = "text" name = "city" value = {input.city||""} onChange = {handleChange}/><br></br><br></br>
         <label>What's your subscription Plan?</label>
              <select name = "Plan" value = {selectOption} onChange={handleChange}>
               <option value="Free">Free</option>
