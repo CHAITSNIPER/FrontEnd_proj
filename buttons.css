@@ -1,0 +1,49 @@
+.but{
+    background-color: rgb(87, 252, 213);
+    color: rgb(144, 212, 144);
+    position: absolute;
+    left:28rem;
+    top: 4rem;
+    margin:12px 12px 12px 12px;
+    padding: 40px 20px 40px 20px;
+    border-radius: 2rem;
+    
+}
+.buttons{
+     background-color: green;
+     color: rgb(166, 255, 175);
+     padding:13px 13px 13px 13px;
+     position: relative;
+     left: 5rem;
+}
+.buttons:hover{
+    background-color:black;
+    color:rgb(158, 237, 206);
+    
+}
+.headme{
+    color: rgb(11, 56, 11);
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.Search{
+    color: rgb(12, 61, 12);
+    
+}
+.search{
+    position:relative;
+    left:5rem;
+    top: 1rem;
+    color: rgb(151, 227, 151);
+    background-color: rgb(42, 80, 67);
+    cursor: pointer;
+}
+.Audit{
+    position:absolute;
+    right:17rem;
+    color: greenyellow;
+    background-color: black;
+    top:14rem;
+    padding: 14px 14px 14px 14px;
+    border-radius: 1.2rem;
+}
